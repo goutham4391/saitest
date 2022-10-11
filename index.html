@@ -407,10 +407,18 @@ var actionbardata = {"siteID":"173208631","siteName":"Sai Home Studio","siteURL"
 	   }
 	   .testimonial .description{
 		   font-size: 15px;
+		   width: 50%;
+		   text-align: justify;
 		   font-style: italic;
 		   color: #8a8a8a;
 		   line-height: 23px;
 		   margin: 0;
+	   }
+	   .testimonial img{
+		height:80%; 
+		width: 40%;
+		margin-left: 50%;
+		position: absolute;		
 	   }
 	   .testimonial .title{
 		   display: block;
@@ -438,6 +446,17 @@ var actionbardata = {"siteID":"173208631","siteName":"Sai Home Studio","siteURL"
 	   .owl-theme .owl-controls.clickable .owl-page:hover span{
 		   background: #0CCA4A;
 	   }
+	   @media (max-width:700px)
+	   {
+		.testimonial .description{
+		   width: 100%;
+	   }
+	   .testimonial img{
+		width: 60%;
+		margin-left: 20%;
+		position: inherit;
+		}
+	   }
 </style>
 
 <div class="container">
@@ -449,13 +468,16 @@ var actionbardata = {"siteID":"173208631","siteName":"Sai Home Studio","siteURL"
 					   <div class="testimonial-icon">
 						   <i class="fa fa-quote-left"></i>
 					   </div>
+					   <img src="images/testmonial1.png"> 
 					   <p class="description">
-						   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
-					   </p>
-				   </div>
-				   <h3 class="title">John</h3>
-				   <span class="post">Web Developer</span>
-			   </div>
+						My daughter has been attending various hobby classes at Sai Home Studio for the past 5years.. Over the years I've discovered that my daughter has developed deep interest in drawing and painting..</p>
+						<p class="description">
+ 						I see her always excited and involved with various vocational activities during her school holidays and I'm really very glad that she's off television or mobile phone and is occupied with useful activities even in her free time.. </p>
+						<p class="description">
+						My deep felt gratitude to Rashmi mam for being a teacher.. guide and a good friend in my daughter's journey. </p>
+				  </div>
+				   <h3 class="title">Dr Ashwini</h3>
+				</div>
 
 			   <div class="testimonial">
 				   <div class="testimonial-content">
@@ -507,15 +529,15 @@ var actionbardata = {"siteID":"173208631","siteName":"Sai Home Studio","siteURL"
 <script>
 $(document).ready(function(){
    $("#testimonial-slider").owlCarousel({
-	   items:2,
-	   itemsDesktop:[1000,3],
-	   itemsDesktopSmall:[980,2],
-	   itemsTablet:[768,2],
+	   items:1,
+	   itemsDesktop:[1000,1],
+	   itemsDesktopSmall:[980,1],
+	   itemsTablet:[768,1],
 	   itemsMobile:[650,1],
 	   pagination:true,
 	   navigation:false,
 	   slideSpeed:1000,
-	   autoPlay:true
+	   autoPlay:false
    });
 });
 </script>
